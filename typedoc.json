@@ -1,6 +1,7 @@
 {
 	"entryPoints": ["src/index.ts"],
 	"hideGenerator": true,
+	"excludeExternals": true,
 	"markedOptions": {
 		"gfm": true,
 		"mangle": false,
