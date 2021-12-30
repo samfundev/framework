@@ -6,7 +6,7 @@ import { Message, Permissions, Snowflake, User } from 'discord.js';
 import { Identifiers } from '../errors/Identifiers';
 import { err, ok, Result } from '../parsers/Result';
 
-interface MessageResolverOptions {
+export interface MessageResolverOptions {
 	channel?: TextBasedChannelTypes;
 	message: Message;
 }

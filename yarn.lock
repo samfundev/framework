@@ -621,6 +621,16 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@discordjs/ts-docgen@npm:^0.3.4":
+  version: 0.3.4
+  resolution: "@discordjs/ts-docgen@npm:0.3.4"
+  dependencies:
+    js-yaml: ^4.1.0
+    typedoc: ^0.22.10
+  checksum: 5928d7dd054355429fb7af2a664232d3c146f31ae50ae8e54d982be811e340099e186d45f8e00a16ee1797bf86b38dbe4e892dfdb920df0a6a1cdb4a5c9d5d85
+  languageName: node
+  linkType: hard
+
 "@eslint/eslintrc@npm:^1.0.5":
   version: 1.0.5
   resolution: "@eslint/eslintrc@npm:1.0.5"
@@ -1032,6 +1042,7 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^16.0.0
     "@commitlint/config-conventional": ^16.0.0
+    "@discordjs/ts-docgen": ^0.3.4
     "@favware/npm-deprecate": ^1.0.4
     "@favware/rollup-type-bundler": ^1.0.6
     "@sapphire/discord-utilities": ^2.4.0
