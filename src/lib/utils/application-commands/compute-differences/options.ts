@@ -1,6 +1,6 @@
 import type { APIApplicationCommandOption } from 'discord-api-types/v10';
 import { optionTypeToPrettyName, type CommandDifference } from './_shared';
-import { reportOptionDifferences } from './option';
+import { reportOptionDifferences } from './optionfile';
 
 export function* checkOptions(
 	existingOptions?: APIApplicationCommandOption[],
