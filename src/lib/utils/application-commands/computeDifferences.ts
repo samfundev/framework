@@ -65,9 +65,11 @@ export function* getCommandDifferences(
 			});
 
 			// Check integration types
+			// @ts-ignore temp
 			yield* checkIntegrationTypes(existingCommand.integration_types, casted.integration_types);
 
 			// Check contexts
+			// @ts-ignore temp
 			yield* checkInteractionContextTypes(existingCommand.contexts, casted.contexts);
 		}
 
@@ -115,9 +117,11 @@ export function* getCommandDifferences(
 	});
 
 	// Check integration types
+	// @ts-ignore temp
 	yield* checkIntegrationTypes(existingCommand.integration_types, casted.integration_types);
 
 	// Check contexts
+	// @ts-ignore temp
 	yield* checkInteractionContextTypes(existingCommand.contexts, casted.contexts);
 
 	yield* checkOptions(existingCommand.options, casted.options);
