@@ -74,6 +74,7 @@ export function normalizeChatInputCommand(
 		type: ApplicationCommandType.ChatInput,
 		dm_permission: command.dmPermission,
 		nsfw: command.nsfw,
+		// @ts-ignore temp
 		integration_types: command.integrationTypes as ApplicationIntegrationType[] | undefined,
 		contexts: command.contexts as InteractionContextType[] | undefined
 	};
@@ -110,6 +111,7 @@ export function normalizeContextMenuCommand(
 	const finalObject: RESTPostAPIContextMenuApplicationCommandsJSONBody = {
 		name: command.name,
 		name_localizations: command.nameLocalizations,
+		// @ts-ignore temp
 		type: command.type,
 		dm_permission: command.dmPermission,
 		nsfw: command.nsfw,
@@ -126,6 +128,7 @@ export function normalizeContextMenuCommand(
 }
 
 export function convertApplicationCommandToApiData(command: ApplicationCommand): RESTPostAPIApplicationCommandsJSONBody {
+	// @ts-ignore temp
 	const returnData = {
 		name: command.name,
 		name_localizations: command.nameLocalizations,
