@@ -5,7 +5,7 @@ import { version } from './package.json';
 const baseOptions: UserConfig = {
 	clean: true,
 	entry: ['src/**/*.ts'],
-	dts: true,
+	dts: process.env.NODE_ENV !== 'production',
 	unbundle: true,
 	minify: false,
 	skipNodeModulesBundle: true,
