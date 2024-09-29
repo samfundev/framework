@@ -5,7 +5,7 @@ import { defineConfig, type Options } from 'tsup';
 const baseOptions: Options = {
 	clean: true,
 	entry: ['src/**/*.ts'],
-	dts: true,
+	dts: process.env.NODE_ENV !== 'production',
 	minify: false,
 	skipNodeModulesBundle: true,
 	sourcemap: true,
