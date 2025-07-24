@@ -213,6 +213,9 @@ export class MessageArgs extends Args {
 	 * ```
 	 */
 	public async restResult<T extends ArgsOptions>(options: T): Promise<ResultType<InferArgReturnType<T>>> {
+		// temp fix for subcommands
+		if (typeof options === 'string') options = { type: options } as unknown as T;
+
 		const argument = this.resolveArgument(options.type);
 		if (!argument) return this.unavailableArgument(options.type);
 		if (this.parser.finished) return this.missingArguments();
