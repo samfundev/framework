@@ -1,6 +1,6 @@
 import { defineConfig, type UserConfig } from 'tsdown';
 import Replace from 'unplugin-replace/rolldown';
-import { version } from './package.json';
+import * as package2 from './package.json' with { type: 'json' };
 
 const baseOptions: UserConfig = {
 	clean: true,
@@ -17,7 +17,7 @@ const baseOptions: UserConfig = {
 			values: [
 				{
 					find: /\[VI\]{{inject}}\[\/VI\]/,
-					replacement: version
+					replacement: package2.default.version
 				}
 			]
 		})
